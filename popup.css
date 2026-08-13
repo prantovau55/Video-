@@ -1,0 +1,368 @@
+/* Monochrome popup styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  width: 320px;
+  overflow-x: hidden;
+}
+
+.extension-card {
+  background: #000000;
+  padding: 16px;
+  border-radius: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+}
+
+/* Header & Branding */
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pulse-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #000000;
+  flex-shrink: 0;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.15);
+}
+
+.brand-image {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.icon-svg {
+  width: 22px;
+  height: 22px;
+}
+
+.brand-text h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  color: #ffffff;
+}
+
+.by-author {
+  font-size: 11px;
+  color: #d1d5db;
+  margin: 0 0 1px 0;
+}
+
+.author-name {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.founder-tag {
+  font-size: 9px;
+  color: #f3f4f6;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.label {
+  color: #94a3b8;
+}
+
+.status-badge {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status-badge.ready {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.status-badge.rendering {
+  background-color: #f3f4f6;
+  color: #111111;
+  border-color: #f3f4f6;
+}
+
+.status-badge.downloading {
+  background-color: #e5e7eb;
+  color: #111111;
+  border-color: #e5e7eb;
+}
+
+.status-badge.error {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.value {
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+/* Action Button */
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 11px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  background: #ffffff;
+  color: #000000;
+}
+
+.btn:disabled {
+  background: #111111 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Log Section styling */
+.log-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 4px;
+}
+
+.log-container {
+  max-height: 100px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: 10px;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 4px;
+}
+
+.log-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.log-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.log-entry {
+  word-break: break-all;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.log-entry .time {
+  color: #64748b;
+  margin-right: 6px;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.secure-badge {
+  font-size: 9px;
+  color: #475569;
+  margin: 0;
+}
+
+/* Settings Box & Toggle Switch */
+.settings-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.setting-subtext {
+  font-size: 9.5px;
+  color: #64748b;
+}
+
+/* Switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #94a3b8;
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffffff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+  background-color: #ffffff;
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Pulse Download Button when completed and Manual mode active */
+.btn-download-pulse {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+
+.btn-download-pulse:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+@keyframes downloadPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(236, 72, 153, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+  }
+}
